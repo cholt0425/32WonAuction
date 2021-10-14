@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "32WonAuction", "32WonAuction\32WonAuction.csproj", "{60EFAB8B-6CCD-445D-99B6-96F96070BDAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuctionAPI", "32WonAuction\AuctionAPI.csproj", "{60EFAB8B-6CCD-445D-99B6-96F96070BDAA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{88E855BF-34BC-4A5E-882C-2DB308A60F22}"
 EndProject
