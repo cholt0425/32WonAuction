@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+  auction:
+    image: ${DOCKER_REGISTRY-}auction
+    build:
+      context: .
+      dockerfile: Auction/Dockerfile
+    depends_on:
+      - mongo
+
+  32wonauction:
+    image: ${DOCKER_REGISTRY-}32wonauction
+    build:
+      context: .
+      dockerfile: 32WonAuction/Dockerfile
+    depends_on:
+      - mongo
+  
+  mongo:
+    image: mongo
+    container_name: auctionDB
+    restart: always
+    ports:
+        - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: auctionAdmin
+      MONGO_INITDB_ROOT_PASSWORD: Xm4XTDbDiFTGkBE
+    volumes:
+      - mongodbdata:/data/db
+volumes:
+  mongodbdata:

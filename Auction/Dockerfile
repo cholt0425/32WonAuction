@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["32WonAuction/32WonAuction.csproj", "32WonAuction/"]
-RUN dotnet restore "32WonAuction/32WonAuction.csproj"
+COPY ["Auction/Auction.csproj", "Auction/"]
+RUN dotnet restore "Auction/Auction.csproj"
 COPY . .
-WORKDIR "/src/32WonAuction"
-RUN dotnet build "32WonAuction.csproj" -c Release -o /app/build
+WORKDIR "/src/Auction"
+RUN dotnet build "Auction.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "32WonAuction.csproj" -c Release -o /app/publish
+RUN dotnet publish "Auction.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "AuctionAPI.dll"]
+ENTRYPOINT ["dotnet", "Auction.dll"]

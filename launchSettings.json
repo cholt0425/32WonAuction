@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "serviceActions": {
+        "32wonauction": "StartWithoutDebugging",
+        "mongo": "StartWithoutDebugging"
+      },
+      "commandVersion": "1.0"
+    }
+  }
+}
