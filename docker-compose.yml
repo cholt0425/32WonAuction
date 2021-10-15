@@ -9,11 +9,11 @@ services:
     depends_on:
       - mongo
 
-  32wonauction:
-    image: ${DOCKER_REGISTRY-}32wonauction
+  auctionapi:
+    image: ${DOCKER_REGISTRY-}auctionapi
     build:
       context: .
-      dockerfile: 32WonAuction/Dockerfile
+      dockerfile: AuctionAPI/Dockerfile
     depends_on:
       - mongo
   

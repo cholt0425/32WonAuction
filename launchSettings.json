@@ -3,8 +3,9 @@
     "Docker Compose": {
       "commandName": "DockerCompose",
       "serviceActions": {
-        "32wonauction": "StartWithoutDebugging",
-        "mongo": "StartWithoutDebugging"
+        "auctionapi": "StartWithoutDebugging",
+        "mongo": "StartWithoutDebugging",
+        "auction": "StartWithoutDebugging"
       },
       "commandVersion": "1.0"
     }

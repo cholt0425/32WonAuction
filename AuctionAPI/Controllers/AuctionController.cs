@@ -1,4 +1,4 @@
-﻿using _32WonAuction.Data.Models;
+﻿using Auction.Data.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace _32WonAuction.Controllers
+namespace Auction.Controllers
 {
     [Authorize]
     [ApiController]

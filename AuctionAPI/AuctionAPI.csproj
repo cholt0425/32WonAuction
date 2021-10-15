@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <UserSecretsId>aspnet-_32WonAuction-51A67357-6E1B-47FD-B8B7-9DC1EBE5458B</UserSecretsId>
+    <UserSecretsId>aspnet-_auctionapi-51A67357-6E1B-47FD-B8B7-9DC1EBE5458B</UserSecretsId>
     <RootNamespace>Auction</RootNamespace>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>

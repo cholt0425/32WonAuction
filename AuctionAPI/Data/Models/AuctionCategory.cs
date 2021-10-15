@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace _32WonAuction.Data.Models
+namespace Auction.Data.Models
 {
     public class AuctionCategory
     {

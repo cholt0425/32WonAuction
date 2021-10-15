@@ -1,6 +1,6 @@
 using System;
 
-namespace _32WonAuction
+namespace Auction
 {
     public class WeatherForecast
     {
