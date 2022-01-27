@@ -8,6 +8,8 @@ import { createBrowserHistory } from 'history';
 import configureStore from './store/configureStore';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import AuthProvider from './utils/authProvider';
+import userManager from './services/userService'
 
 // Create browser history to use in the Redux store
 const baseUrl = document.getElementsByTagName('base')[0].getAttribute('href') as string;
@@ -18,9 +20,11 @@ const store = configureStore(history);
 
 ReactDOM.render(
     <Provider store={store}>
-        <ConnectedRouter history={history}>
-            <App />
-        </ConnectedRouter>
+        <AuthProvider userManager={userManager} store={store}>
+            <ConnectedRouter history={history}>
+                <App />
+            </ConnectedRouter>
+        </AuthProvider>
     </Provider>,
     document.getElementById('root'));
 

@@ -2,7 +2,7 @@
 using MongoDbGenericRepository.Attributes;
 using System;
 
-namespace Auction.Models
+namespace Auction.Identity.Models
 {
     [CollectionName("Roles")]
     public class AppRole : MongoIdentityRole<Guid>

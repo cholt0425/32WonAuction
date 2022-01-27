@@ -5,6 +5,8 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
+    build:
+      dockerfile: Auction/Dockerfile.Dev
     ports:
       - "80"
       - "443"
