@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import * as React from 'react';
+import { useEffect } from 'react'
 import { signinRedirectCallback } from '../../services/userService'
 import { useHistory } from 'react-router-dom'
 
