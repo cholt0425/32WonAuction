@@ -1,7 +1,5 @@
-using AuctionAdmin.Data;
 using AuctionAdmin.Models;
 using AuctionAdmin.Settings;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
