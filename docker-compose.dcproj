@@ -6,7 +6,7 @@
     <ProjectGuid>1adee6be-7677-42ee-9499-f114357737a8</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
-    <DockerServiceName>auction</DockerServiceName>
+    <DockerServiceName>auctionadmin</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">

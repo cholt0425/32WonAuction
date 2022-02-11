@@ -1,12 +1,12 @@
 version: '3.4'
 
 services:
-  auction:
+  auctionadmin:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
     build:
-      dockerfile: Auction/Dockerfile.Dev
+      dockerfile: AuctionAdmin/Dockerfile.Dev
     ports:
       - "80"
       - "443"

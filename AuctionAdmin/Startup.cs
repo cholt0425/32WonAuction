@@ -24,7 +24,7 @@ namespace AuctionAdmin
         {
             var mongoDbSettings = Configuration.GetSection(nameof(MongoDbConfig)).Get<MongoDbConfig>();
 
-            services.AddDatabaseDeveloperPageExceptionFilter();
+            //services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddIdentity<ApplicationUser, ApplicationRole>()
                     .AddMongoDbStores<ApplicationUser, ApplicationRole, Guid>

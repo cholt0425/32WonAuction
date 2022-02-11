@@ -5,7 +5,7 @@
       "serviceActions": {
         "auctionapi": "StartWithoutDebugging",
         "mongo": "StartWithoutDebugging",
-        "auction": "StartWithoutDebugging"
+        "auctionadmin": "StartWithoutDebugging"
       },
       "commandVersion": "1.0"
     }

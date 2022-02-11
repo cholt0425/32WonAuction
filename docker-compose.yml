@@ -1,11 +1,11 @@
 version: '3.7'
 
 services:
-  auction:
-    image: ${DOCKER_REGISTRY-}auction
+  auctionadmin:
+    image: ${DOCKER_REGISTRY-}auctionadmin
     build:
       context: .
-      dockerfile: Auction/Dockerfile
+      dockerfile: AuctionAdmin/Dockerfile
     depends_on:
       - mongo
 
@@ -16,9 +16,10 @@ services:
       dockerfile: AuctionAPI/Dockerfile
     depends_on:
       - mongo
+      - auctionadmin
   
   mongo:
-    image: mongo
+    image: ${DOCKER_REGISTRY-}mongo
     container_name: auctionDB
     restart: always
     ports:
